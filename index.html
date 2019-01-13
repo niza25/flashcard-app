@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FlashCard App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">The Fantastic Memory Game</h1>
+        <div class="cardContainer">
+                <p id="qLeft"></p>
+            <div id="card">
+                <p>Ready For Questions?</p>
+            </div>
+            <button onclick="getQuestion()" id="getQuestion">Show Question</button>
+            <div id="formContainer" class="questionForm notVisible">
+
+                <form onsubmit="addQuestion()">
+                    <label for="questioInput">Add new Question:</label>
+                    <textarea type="text" name="questionInput" id="questionInput"></textarea>
+                    <label for="answerInput">Add your answer:</label>
+                    <textarea type="text" name="answerInput" id="answerInput"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <button onclick="displayForm()" id="addQuestion">Add New Question</button>
+        </div>      
+    </div>
+    <footer>Made with love </br> by Jurgis and Izabela, 2019</footer>
+</body>
+<script src="main.js"></script>
+</html>
